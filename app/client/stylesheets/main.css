@@ -2,22 +2,38 @@
 /* main: Style */
 /*****************************************************************************/
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+    display: flex !important;
+    min-height: 100vh !important;
+    flex-direction: column !important;
 }
 
 main {
-    flex: 1 0 auto;
+    flex: 1 0 auto !important;
 }
 .icon{
     width: 94px;
     height: 94px !important;
 }
-/*.card:hover {
+.card:hover {
     border-bottom: solid 3px crimson;
-}*/
-.card{
-    cursor: pointer;
+}
+.card {
+    padding-top: 10px;
     border-radius: 12px;
+    cursor: pointer;
+}
+
+.card .card-content .card-title {
+    line-height: 17px;
+    -webkit-transition: 1s;
+    transition:  1s;
+}
+
+@media screen and (max-width: 380px) {
+    .card .card-content .card-title {
+        font-size: 15px;
+    }
+}
+.header{
+    margin-bottom: 25px;
 }
