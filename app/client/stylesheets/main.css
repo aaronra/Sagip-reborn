@@ -10,3 +10,14 @@ body {
 main {
     flex: 1 0 auto;
 }
+.icon{
+    width: 94px;
+    height: 94px !important;
+}
+/*.card:hover {
+    border-bottom: solid 3px crimson;
+}*/
+.card{
+    cursor: pointer;
+    border-radius: 12px;
+}
